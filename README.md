@@ -5,7 +5,7 @@
 When you click a link on this site, an LLM generates the HTML for a new page based on the current page and the ID of the link you clicked on. This requires a decent machine for running Llama2 or another LLM locally.
 
 To run:
-1. Install required python packages (pip install -r require)
+1. Install required python packages:
 
 ```
 pip install -r requirements.txt
