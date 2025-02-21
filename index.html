@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMHell</title>
+    <script src="/static/js/script.js"></script>
+    <style>
+        body {
+            background: repeating-linear-gradient(45deg, red, yellow 10%, blue 20%);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: lime;
+            text-align: center;
+            animation: spin 5s infinite linear;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        h1 {
+            font-size: 50px;
+            text-shadow: 5px 5px 10px purple;
+            letter-spacing: 10px;
+        }
+        p {
+            font-size: 24px;
+            background-color: black;
+            color: cyan;
+            border: 5px dashed magenta;
+            padding: 20px;
+            transform: skew(20deg);
+        }
+        a {
+            font-size: 30px;
+            color: orange;
+            text-decoration: blink;
+        }
+        marquee {
+            font-size: 40px;
+            color: red;
+            background: white;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left">Welcome to this terrible website!</marquee>
+    <h1>Look at this disaster...</h1>
+    <p>Welcome to HTMHell!</p>
+    <a href="#">Enter if you dare...</a>
+</body>
+</html>
