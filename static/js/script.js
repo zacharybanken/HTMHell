@@ -1,4 +1,5 @@
 document.addEventListener("click", function (event) {
+    console.log("Click detected on:", event.target);  // Log the clicked element
     // Check if the clicked element is a link (A tag)
     if (event.target.tagName === "A") {
         event.preventDefault();  // Prevent default link behavior

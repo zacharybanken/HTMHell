@@ -44,15 +44,15 @@ async def generate_html(request: Request):
     clicked_id = data.get("clicked_id", "")
     
     prompt = f"""
-    You are an AI that dynamically generates web pages.
-    Given the following HTML:
+    You are an AI that dynamically generates web pages. 
+    The current page is the following HTML:
     {current_html}
     
     The user clicked on the element with ID: {clicked_id}.
     Generate the next short page in valid HTML format.
     Include a few links and some creative content.
-    
-    ONLY INCLUDE HTML IN YOUR RESPONSE. Do not include a preface, explanation, or sign-off.
+    Only include the HTML page in your response.
+    No preface. No explanation. No sign-off.
     """
     
     if USE_LOCAL_LLM:
